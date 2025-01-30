@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/banner1.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -55,7 +55,8 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Welcome to our Company</span>
+                <span className="tagline">Transforming Ideas
+                into Digital Reality</span>
                 <h1>{`Hi! Are You `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Our", "Services", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>Our expertise in technology understanding and software coding for web solution projects along with a team of techno savvy web experts, software professionals give a value added dimension to any project with their ‘think beyond’ work culture. We integrate every special element, experience and expertise to turn out every solution, a signature solution.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
@@ -66,7 +67,7 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  {/* <img src={headerImg} alt="Header Img"/> */}
                 </div>}
             </TrackVisibility>
           </Col>
