@@ -1,6 +1,9 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter1 from "../assets/img/android.jpg";
+import meter2 from "../assets/img/web.jpeg";
+import meter3 from "../assets/img/Ios.jpg";
+import meter4 from "../assets/img/hybridzapp.png";
+import meter5 from "../assets/img/digitalmar.png";
+import meter6 from "../assets/img/uiux.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -39,27 +42,27 @@ export const Skills = () => {
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Mobile App Development</h5>
+                                <h5>Android App </h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Custom Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
                                 <h5>Web Development</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web & Graphic Designes</h5>
+                                <img src={meter3} alt="Image" />
+                                <h5>Ios Mobile App</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>CMS Development</h5>
+                                <img src={meter4 } alt="Image" />
+                                <h5> Hybrid App</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter5} alt="Image" />
                                 <h5>Digital Marketing</h5>
+                            </div>
+                            <div className="item">
+                                <img src={ meter6} alt="Image" />
+                                <h5>Ui/Ux Design</h5>
                             </div>
                         </Carousel>
                     </div>
