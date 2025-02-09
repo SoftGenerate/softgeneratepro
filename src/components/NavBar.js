@@ -47,12 +47,19 @@ export const NavBar = () => {
               ))}
             </Nav>
             <span className="navbar-text">
-              <div className="social-icon">
-                {[navIcon1, navIcon2, navIcon3].map((icon, index) => (
-                  <a key={index} href="#"><img src={icon} alt="social-icon" /></a>
-                ))}
-              </div>
-              <HashLink to="#connect">
+            <div className="social-icon">
+  {[
+    { icon: navIcon1, link: "https://www.linkedin.com/in/softgenerate-it-b3264b1b6/" },
+    { icon: navIcon2, link: "https://www.facebook.com/profile.php?id=100053906046732" },
+    { icon: navIcon3, link: "https://www.instagram.com/softgenerate/" },
+  ].map(({ icon, link }, index) => (
+    <a key={index} href={link} target="_blank" rel="noopener noreferrer">
+      <img src={icon} alt={`social-icon-${index}`} />
+    </a>
+  ))}
+</div>
+
+              <HashLink to="#contact">
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
             </span>

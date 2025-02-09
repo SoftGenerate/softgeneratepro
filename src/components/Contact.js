@@ -58,6 +58,7 @@ export const Contact = () => {
       <Container>
         <Row className="align-items-center">
           <Col md={6} className="text-center">
+         
             <TrackVisibility>
               {({ isVisible }) => (
                 <img className={isVisible ? "animate__animated animate__zoomIn" : ""} src={contactImg} alt="Contact Us" />
