@@ -65,6 +65,7 @@ export const Contact = () => {
               )}
             </TrackVisibility>
             <div className="contact-info mt-4 text-center">
+              
               <ContactDetail icon={FaEnvelope} text="Email" detail="softgenerate@gmail.com" color="text-primary" />
               <ContactDetail icon={FaMapMarkerAlt} text="Address" detail="Devi Nagar Rd, Jaipur, Rajasthan 302019" color="text-danger" />
               <ContactDetail icon={FaPhone} text="Mobile" detail="+91-9782379167 , 8949482523" color="text-success" />
