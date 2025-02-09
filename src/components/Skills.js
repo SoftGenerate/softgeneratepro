@@ -4,6 +4,7 @@ import meter3 from "../assets/img/Ios.jpg";
 import meter4 from "../assets/img/hybridzapp.png";
 import meter5 from "../assets/img/digitalmar.png";
 import meter6 from "../assets/img/uiux.png";
+import meter7 from "../assets/img/mern.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -32,7 +33,7 @@ export const Skills = () => {
   };
 
   return (
-    <section className="skill" id="skills">
+    <section className="services" id="services">
         <div className="container">
             <div className="row">
                 <div className="col-12">
@@ -63,6 +64,11 @@ export const Skills = () => {
                             <div className="item">
                                 <img src={ meter6} alt="Image" />
                                 <h5>Ui/Ux Design</h5>
+                            </div>
+
+                            <div className="item">
+                                <img src={meter7} alt="Image" />
+                                <h5>MERN Stack</h5>
                             </div>
                         </Carousel>
                     </div>

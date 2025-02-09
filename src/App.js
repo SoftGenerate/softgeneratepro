@@ -5,6 +5,7 @@ import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
+import { AboutUs } from "./components/Aboutus";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Helmet } from "react-helmet-async";
@@ -33,8 +34,11 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+     
       <Contact />
+      
       <Footer />
+     
     </div>
   );
 }
