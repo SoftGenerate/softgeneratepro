@@ -3,9 +3,12 @@ import { ProjectCard } from "./ProjectCard";
 import Slider from "react-slick";  // Import React Slick
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/proj1.png";
+import projImg2 from "../assets/img/proj2.png";
+import projImg3 from "../assets/img/proj3.png";
+import projImg4 from "../assets/img/mob1.png";
+import projImg5 from "../assets/img/mob2.png";
+import projImg6 from "../assets/img/mob3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -17,6 +20,12 @@ export const Projects = () => {
     { title: "Business Startup", description: "Design & Development", imgUrl: projImg1 },
     { title: "Business Startup", description: "Design & Development", imgUrl: projImg2 },
     { title: "Business Startup", description: "Design & Development", imgUrl: projImg3 },
+  ];
+  
+  const projects1 = [
+    { title: "Business Startup", description: "Design & Development", imgUrl: projImg4 },
+    { title: "Business Startup", description: "Design & Development", imgUrl: projImg5 },
+    { title: "Business Startup", description: "Design & Development", imgUrl: projImg6 },
   ];
 
   const testimonials = [
@@ -57,7 +66,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">Testimonials</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Other Project</Nav.Link>
+                        <Nav.Link eventKey="third">Mobile Project</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -86,7 +95,12 @@ export const Projects = () => {
                         </Slider>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>More information coming soon.</p>
+                      <Row>
+                          {projects1.map((project, index) => (
+                            <ProjectCard key={index} {...project} />
+                          ))}
+                        </Row>
+                        {/* <p>More information coming soon.</p> */}
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

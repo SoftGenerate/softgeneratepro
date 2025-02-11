@@ -58,7 +58,7 @@ export const Banner = () => {
                 <span className="tagline">Transforming Ideas
                 into Digital Reality</span>
                 <h1>{`Hi! Are You `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Our", "Services", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Our expertise in technology understanding and software coding for web solution projects along with a team of techno savvy web experts, software professionals give a value added dimension to any project with their ‘think beyond’ work culture. We integrate every special element, experience and expertise to turn out every solution, a signature solution.</p>
+                  <p><b>Our expertise in technology understanding and software coding for web solution projects along with a team of techno savvy web experts, software professionals give a value added dimension to any project with their ‘think beyond’ work culture. We integrate every special element, experience and expertise to turn out every solution, a signature solution.</b></p>
                   <button onClick={() => console.log('#contact')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
