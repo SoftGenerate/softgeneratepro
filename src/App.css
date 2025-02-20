@@ -98,11 +98,11 @@ nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 400;
+  font-weight: 550;
   color: #fff !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -232,20 +232,75 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Banner Css ************/
 .banner {
-  margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner03.png');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full-screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
 }
+
+.banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
+  text-align: left;
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: bold;
+  color: #f8d210;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #e0059f;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #d8c201;
+}
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  margin-top: 60px;
+  background: linear-gradient(90.21deg, rgba(235, 2, 142, 0.76) -5.91%, rgba(31, 2, 158, 0.856) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 16px;
   display: inline-block;
 }
@@ -259,7 +314,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner p {
   color: #B8B8B8;
-  font-size: 18px;
+  font-size: 20px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
