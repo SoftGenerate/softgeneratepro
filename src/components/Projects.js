@@ -33,7 +33,10 @@ export const Projects = () => {
     { name: "Dan Bennett", review: "Outstanding IT services! The team is professional, efficient, and delivers high-quality solutions. Highly recommended for any software needs!", rating: 5 },
     { name: "Anura V.", review: "This would be my second project with SoftGenerate. These are wonderful bunch of professionals. Great to work with SoftGenerate.", rating: 4 },
     { name: "Gopal Gupta", review: "Great people to work with. They are full of professional etiquette and true ethics. Such an amazing team with clear skills and quality techniques.", rating: 4 },
-    { name: "Tragic Soul", review: " Developing our app with softgenerate was a smooth and collaborative experience. They understood our needs, proposed innovative solutions, and delivered a polished app that exceeds our expectations.", rating: 5 }
+    { name: "Tragic Soul", review: " Developing our app with softgenerate was a smooth and collaborative experience. They understood our needs, proposed innovative solutions, and delivered a polished app that exceeds our expectations.", rating: 5 },
+    {name:  "Akansha Sht" , review: "Fast execution, professional staff, we did a very good project, for sure I will do more projects with softgenerate in future",rating: 5},
+    {name:" Marketing Specialist"  , review : "We are very happy with the quality, urgency and efficiency of their work",rating : 4},
+    {name:  "Real Estate" , review :"It's a true pleasure working with the team.",rating: 5},
   ];
 
   
